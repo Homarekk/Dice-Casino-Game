@@ -10,6 +10,7 @@ namespace Utils {
     void clearScreen(); // artificially clear screen
     std::string getValidNick(const std::string &prompt);    // get valid nickname
     std::string getValidEmail(const std::string &prompt);   // get Valid Email
-    double getPositiveDouble(const std::string &prompt);    // get positive double value
+    double getPositiveDouble(const std::string &prompt);    // get positive value
+    static bool hasSpaces(const std::string &s);
 }
 
