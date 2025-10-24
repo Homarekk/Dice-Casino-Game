@@ -120,8 +120,8 @@ std::string Utils::getValidNick(const std::string &prompt) {
     while (true) {
         std::string nickname = Utils::getTrimmedInput(prompt);
 
-        if (nickname.length() < 6) {
-            std::cout << "Nickname length must be at least 6 characters long\n";
+        if (nickname.length() < 6 && nickname.length > 20) {
+            std::cout << "Nickname length must be 6-20 characters long\n";
             continue;
         }
 
